@@ -1,0 +1,1147 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0; }
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 2vw;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; 
+  resize: none;}
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside; }
+ol {
+  list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 1rem; }
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem; }
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+/* Custom Styling
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body {
+    height:100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+#header{
+  min-width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+
+#header #video-bg{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  /* The following will size the video to fit the full container. Not necessary, just nice. */;
+  z-index: -100; 
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+
+/* Nav Bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav ul{
+  text-align: center;
+  background-color: rgba(215, 147, 44, 0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+}
+
+nav li{
+  position: relative;
+  list-style: none;
+  padding: 0 25px;
+}
+nav ul li a{
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+  
+}
+/*desktop*/
+@media (min-width: 801px){
+  div .mobile{
+    display: none;
+  }
+  nav li{
+    display: inline;
+  }
+
+  nav ul li a{
+    display: inline-block;
+  }
+}
+/*mobile*/
+@media (max-width: 800px){
+  div .desktop{
+    display: none;
+  }
+  div .navbar{
+    content: " ";
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(215, 147, 44, 0.7);
+    top: 0;
+    position: fixed;
+    z-index: 4;
+  }
+.border-menu {
+  position: fixed;
+  padding-left: 1.25em;
+  z-index: 5;
+  top: 1rem;
+  margin-left: 1rem;
+}
+.border-menu:before,
+.border-menu:after {
+  content: " ";
+  position: absolute;
+  top: 0.125em;
+  left: 0;
+  width: 2em;
+  height: 1em;
+  border-top: 0.25em solid #FFFFFF;
+  border-bottom: 0.25em solid #FFFFFF;
+}
+.border-menu:after {
+  height: .4em;
+  border-bottom: 0.25em solid #FFFFFF;
+}
+
+  nav ul {
+    top: 5rem;
+  }
+
+}
+
+/* Culture
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#culture{
+  background-image: url(http://i.lmnd3.com/images/LemonadeBkg_Lemo.jpg);
+  position: float;
+  padding: 5rem 0 0;
+  text-align: center;
+  min-height: 45vw;
+}
+
+#culture h1{
+  margin-top: 10vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  font-size: 3.2vw;
+}
+
+#culture p{
+  font-size: 1.4vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+#culture button{
+  border-radius: 4px;
+  font-size: 1.1vw;
+  background-color: #85CB33;
+  border-color: #85CB33;
+  -moz-box-shadow:    0px 2px 0px 0px #888888;
+  -webkit-box-shadow: 0px 2px 0px 0px #888888;
+  box-shadow:         0px 2px 0px 0px #888888;
+}
+
+#culture button:hover{
+  margin-top: 1px;
+  -moz-box-shadow:    0px .5px 0px 0px #888888;
+  -webkit-box-shadow: 0px .5px 0px 0px #888888;
+  box-shadow:         0px .5px 0px 0px #888888;
+}
+
+#culture button:active{
+  margin-top: 2px;
+  -moz-box-shadow:    0px 0px 0px 0px #888888;
+  -webkit-box-shadow: 0px 0px 0px 0px #888888;
+  box-shadow:         0px 0px 0px 0px #888888;
+}
+
+
+/* Ingredients
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#ingredients{
+  postion: float;
+  text-align: center;
+  min-height: 900px;
+  background: transparent;
+}
+
+#ingredients h1{
+  margin-top: 40rem;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 400;
+}
+
+.parallax-window {
+    min-height: 900px;
+    background: transparent;
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+}
+
+/* Specials
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#specials{
+  background-image: url(http://i.lmnd3.com/images/LemonadeBkg_Avoc.jpg);
+  text-align: center;
+  height: 70vw;
+  max-height: 90rem;
+}
+#specials h2{
+  margin-top: 10rem;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+#specials .food-image{
+  position: relative;
+  margin-top: 2rem;
+  width: 39vw;
+  height: 27vw;
+  max-width: 42rem;
+  max-height: 25rem;
+  overflow: hidden;
+  border-radius: 15px;
+  -moz-box-shadow:    0px 2px 0px 0px #888888;
+  -webkit-box-shadow: 0px 2px 0px 0px #888888;
+  box-shadow:         0px 2px 0px 0px #888888;
+
+}
+#specials img {
+   position: absolute; top:0; left: 0;
+   width: 100%;
+   height: 100%;
+}
+#specials .img-descrip{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: transparent;
+  transition: .5s;
+  text-align: center;
+  padding-top: 25%;
+}
+
+#specials .food-image > div:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+#specials .food1 > div:hover{
+  background-color: rgba(108, 187, 182, 0.6);
+}
+
+#specials .food2 > div:hover{
+  background-color: rgba(255, 168, 75, 0.6);
+}
+
+#specials .food3 > div:hover{
+  background-color: rgba(255, 200, 0, 0.6);
+}
+
+#specials .food4 > div:hover{
+  background: rgba(88, 183, 75, 0.6);
+}
+
+/* Cali Spirit
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#calis{
+  postion: float;
+  text-align: center;
+  min-height: 900px;
+  background: transparent;
+}
+
+#calis h1{
+  margin-top: 40rem;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 400;
+}
+
+.parallax-window {
+    min-height: 900px;
+    background: transparent;
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+}
+
+/* Location Banner Thingy
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#loc-banner{
+  background-image: url(http://i.lmnd3.com/images/RADISH.jpg);
+  position: float;
+  padding: 2.2rem 0 0;
+  text-align: center;
+  min-height: 75px;
+}
+
+#loc-banner h1{
+  font-size: 3vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
+/* The Map
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#map-canvas {
+  min-height: 800px;
+  background-color: #CCC;
+
+}
+
+.gm-style-iw {
+  width: 240px !important;
+  top: 15px !important;
+  left: 0px !important;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+}
+#iw-container {
+  margin-bottom: 10px;
+}
+#iw-container .iw-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 5px;
+  color: #fcd53a;
+  margin: 0;
+  border-radius: 2px 2px 0 0;
+  text-transform: uppercase;
+}
+#iw-container .iw-content {
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-right: 1px;
+  padding: 0px 2px 2px 5px;
+  max-height: 140px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.iw-content img {
+  float: right;
+  margin: 0 5px 5px 10px; 
+}
+.iw-subTitle {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+.iw-bottom-gradient {
+  position: absolute;
+  width: 326px;
+  height: 25px;
+  bottom: 10px;
+  right: 18px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+/* 2nd Location Banner Thingy
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#loc-banner2{
+  background-image: url(http://i.lmnd3.com/images/RADISH.jpg);
+  position: float;
+  padding: 2.2rem 0 0;
+  text-align: center;
+  min-height: 75px;
+  text-transform: uppercase;
+}
+
+#loc-banner2 h1{
+  font-size: 3vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+#loc-banner2 .horiz-list ul{
+  margin-left: 6.7vw;
+  margin-top: -1rem;
+  margin-bottom: -.8rem;
+}
+#loc-banner2 .horiz-list li span{ 
+  font-size: 1.5vw;
+  vertical-align: top;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+#loc-banner2 .horiz-list li{
+  list-style-type: square;
+  line-height: 1rem;
+  padding: 1.2rem;
+  float: left;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+#loc-banner2 .horiz-list li:nth-child(1){
+  list-style-type: none;
+}
+
+/* Healthy Alternative
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#healthy{
+  postion: float;
+  text-align: center;
+  min-height: 900px;
+  background: transparent;
+}
+
+#healthy h1{
+  margin-top: 40rem;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 400;
+}
+
+/* Cookbook
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#cookbook{
+  background-image: url(http://i.lmnd3.com/images/LemonadeBkg_Broc.jpg);
+  position: float;
+  min-height: 800px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+
+}
+#cookbook .issuuembed {
+    width: 525px;
+    height: 340px;
+    margin: 0 auto;
+    display: block;
+}
+
+#cookbook h1{
+  font-size: 3vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+#cookbook p{
+  font-size: 1.3vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#cookbook p1{
+  font-size: 1.3vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+}
+
+#cookbook h2{
+  margin-top: 1.5rem;
+  font-size: 2.4vw;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#cookbook button{
+  width: 18rem;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: #E4572E;
+  border-color: #E4572E;
+  -moz-box-shadow:    0px 2px 0px 0px #888888;
+  -webkit-box-shadow: 0px 2px 0px 0px #888888;
+  box-shadow:         0px 2px 0px 0px #888888;
+  font-size: 1rem;
+
+}
+
+#cookbook button:hover{
+  transform: translateY(.2rem);
+  -moz-box-shadow:    0px .5px 0px 0px #888888;
+  -webkit-box-shadow: 0px .5px 0px 0px #888888;
+  box-shadow:        0px .5px 0px 0px #888888;
+}
+
+#cookbook button:active {
+  transform: translateY(.3rem);
+  -moz-box-shadow:    0px 0px 0px 0px #888888;
+  -webkit-box-shadow: 0px 0px 0px 0px #888888;
+  box-shadow:         0px 0px 0px 0px #888888;
+}
+
+/* Cuisine
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#cuisine{
+  postion: float;
+  text-align: center;
+  min-height: 900px;
+  background: transparent;
+}
+
+#cuisine h1{
+  margin-top: 40rem;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 400;
+}
+
+/* Buzz
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#buzz{
+  background-image: url(http://i.lmnd3.com/images/LemonadeBkg_Strb.jpg);
+  position: float;
+  height: 70vw;
+  max-height: 90rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#buzz h1{
+  margin-top: 10rem;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 400;
+}
+
+#buzz img{
+  max-width: 30rem;
+  width: 24vw;
+  border-radius: 12px;
+  -moz-box-shadow:    0px 3px 0px 0px #888888;
+  -webkit-box-shadow: 0px 3px 0px 0px #888888;
+  box-shadow:         0px 3px 0px 0px #888888;
+}
+
+#buzz img:hover{
+  width: 24vw;
+  max-width: 30rem;
+  border-radius: 12px;
+  transform: translateY(.3rem);
+  -moz-box-shadow:    0px 0px 0px 0px #888888;
+  -webkit-box-shadow: 0px 0px 0px 0px #888888;
+  box-shadow:         0px 0px 0px 0px #888888;
+}
+
+#buzz h3{
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+
+#buzz p{
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: -.5rem;
+}
+
+#buzz button{
+  width: 38vw;
+  height: 5vw;
+  border-radius: 7px;
+  font-size: 1.5vw;
+  background-color: #E4572E;
+  border-color: #E4572E;
+  -moz-box-shadow:    0px 2px 0px 0px #888888;
+  -webkit-box-shadow: 0px 2px 0px 0px #888888;
+  box-shadow:         0px 2px 0px 0px #888888;
+  text-align: center;
+
+}
+
+#buzz button:hover{
+  transform: translateY(.2rem);
+  -moz-box-shadow:    0px .5px 0px 0px #888888;
+  -webkit-box-shadow: 0px .5px 0px 0px #888888;
+  box-shadow:        0px .5px 0px 0px #888888;
+}
+
+#buzz button:active {
+  transform: translateY(.3rem);
+  -moz-box-shadow:    0px 0px 0px 0px #888888;
+  -webkit-box-shadow: 0px 0px 0px 0px #888888;
+  box-shadow:         0px 0px 0px 0px #888888;
+}
+
+
+/* Squeeze
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#squeeze{
+  position: float;
+  max-height: 650px;
+}
+
+#squeeze #v0{
+  position: relative;
+  margin-top: -10rem;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  /* The following will size the video to fit the full container. Not necessary, just nice. */;
+  z-index: -100; 
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+#squeeze p{
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-top: -.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#squeeze h1{
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-top: 25rem;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+
+/*mobile*/
+@media (max-width: 800px){
+  #squeeze h1{
+    margin-top: 20rem;
+  }
+  #squeeze #v0{
+    margin-top: -10rem;
+  }
+}
+@media (max-width: 1250px){
+    #squeeze #v0 {
+    margin-top: -14rem;
+  }
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#footer{
+  background-color: #d3d0cb;
+
+}
+
+#footer .container{
+  min-width: 65rem;
+}
+
+#footer ul{
+  margin-top: 2rem;
+  list-style-type: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+#footer li{
+  list-style-type: none;
+  top: -1em;
+  line-height:.5;
+}
+
+
+#footer input{
+  width: 14rem;
+  margin-left: -2.8vw;
+  background-color: #fcd53a;
+  border-color: #fcd53a;
+  border-radius: 0px 4px 4px 0px;
+  border: 0px;
+}
+
+@media (max-width: 1400px){
+  #footer{
+    margin-top: -14rem;
+  }
+}
+@media (max-width: 1250px){
+    #footer ul{
+    font-size: .9rem;
+  }
+}
+@media (max-width: 1100px){
+  #footer{
+    margin-top: -18rem;
+  }
+    #footer ul{
+    font-size: .85rem;
+  }
+
+}
+@media (max-width: 800px){
+  #footer ul{
+    font-size: .8rem;
+  }
+  #footer li{
+    line-height: 1;
+  }
+  #footer input{
+    width: 14vw;
+    font-size: .8rem;
+    margin-left: -2.8vw;
+    background-color: #fcd53a;
+    border-color: #fcd53a;
+    border-radius: 0px 4px 4px 0px;
+    border: 0px;
+  }
+  #footer textarea{
+    font-size: .8rem;
+    height: 2rem; 
+  }
+
+}
